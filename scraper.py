@@ -35,3 +35,16 @@ for card in product_cards:
     })
 
 print(f"Scraped {len(all_products)} products successfully.")
+
+df = pd.DataFrame(all_products)
+
+df.to_csv('ethnic_products.csv', index=False)
+
+print(f"Extraction complete! {len(all_products)} products have been saved.") 
+
+
+print("Data Preview:")
+
+df.shape
+
+df.head()
