@@ -1,0 +1,7 @@
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+import time
+
+url = "https://pk.ethnc.com/collections/rozana?page=1"
+headers = {'User-Agent': 'Mozilla/5.0'}
